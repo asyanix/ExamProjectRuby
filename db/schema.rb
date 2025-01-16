@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_01_16_173148) do
+ActiveRecord::Schema[8.0].define(version: 2025_01_16_185555) do
+  create_table "platforms", force: :cascade do |t|
+    t.string "name"
+    t.date "releaseDate"
+    t.string "manufacturer"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "publishers", force: :cascade do |t|
     t.string "name"
     t.string "country"

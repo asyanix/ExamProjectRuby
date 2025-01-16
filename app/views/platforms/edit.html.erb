@@ -1,0 +1,11 @@
+<% content_for :title, "Editing platform" %>
+
+<h1>Editing platform</h1>
+
+<%= render "form", platform: @platform %>
+
+<br>
+
+<div>
+  <%= button_to "Back to list", platforms_path, method: :get %>
+</div>

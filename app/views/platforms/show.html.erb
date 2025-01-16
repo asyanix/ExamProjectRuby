@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @platform %>
+
+<div>
+  <%= button_to 'Edit', edit_platform_path(@platform), method: :get %>
+  <%= button_to 'Delete', platform_path(@platform), method: :delete %>
+  <%= button_to "Back to platforms", platforms_path, method: :get %>
+</div>
