@@ -22,7 +22,7 @@ class PublishersController < ApplicationController
     if @publisher.save
       redirect_to @publisher, notice: "Publisher was successfully created."
     else
-      render :new, status: :unprocessable_entity 
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -30,7 +30,7 @@ class PublishersController < ApplicationController
     if @publisher.update(publisher_params)
       redirect_to @publisher, notice: "Publisher was successfully updated."
     else
-      render :edit, status: :unprocessable_entity 
+      render :edit, status: :unprocessable_entity
     end
   end
 

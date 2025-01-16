@@ -3,8 +3,8 @@
 <%= render @publisher %>
 
 <div>
-  <%= link_to "Edit this publisher", edit_publisher_path(@publisher) %> |
-  <%= link_to "Back to publishers", publishers_path %>
+  <%= button_to "Edit", edit_publisher_path(@publisher), method: :get %>
+  <%= button_to "Delete", @publisher, method: :delete %>
 
-  <%= button_to "Destroy this publisher", @publisher, method: :delete %>
+  <%= button_to "Back to publishers", publishers_path, method: :get %>
 </div>
