@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @game %>
+
+<div>
+  <%= button_to 'Edit', edit_game_path(@game), method: :get %>
+  <%= button_to 'Delete', game_path(@game), method: :delete %> 
+  <%= button_to 'Back to games', games_path, method: :get %>
+</div>

@@ -1,0 +1,11 @@
+<% content_for :title, "Editing game" %>
+
+<h1>Edit Game</h1>
+
+<%= render 'form', game: @game %>
+
+<br>
+
+<div>
+<%= button_to 'Back to list', games_path, method: :get %>
+</div>
