@@ -1,0 +1,98 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #79a87f;
+    color: #333;
+    margin: 20px;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+  color: #e6e6e6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+
+h2, h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #314334;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.btn-danger {
+  background-color: #f44336;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 5px;
+}
+.btn-edit {
+  background-color: #e6f051;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.btn:hover, .btn-primary:hover, .btn-danger:hover, .btn-edit:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+a {
+  font-size: larger;
+  color: #2e5a95;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #264b7b;
+}
+
+.form_new {
+  max-width: 400px;
+  margin: 0 auto; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.form_new div {
+  margin-bottom: 15px;
+}
+  
+.form_new label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}

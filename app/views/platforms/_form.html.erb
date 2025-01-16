@@ -1,4 +1,4 @@
-<%= form_with(model: platform) do |form| %>
+<%= form_with(model: platform, class: 'form_new') do |form|%>
   <% if platform.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(platform.errors.count, "error") %> prohibited this platform from being saved:</h2>

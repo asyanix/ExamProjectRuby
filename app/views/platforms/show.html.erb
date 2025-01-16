@@ -3,7 +3,7 @@
 <%= render @platform %>
 
 <div>
-  <%= button_to 'Edit', edit_platform_path(@platform), method: :get %>
-  <%= button_to 'Delete', platform_path(@platform), method: :delete %>
-  <%= button_to "Back to platforms", platforms_path, method: :get %>
+  <%= button_to 'Edit', edit_platform_path(@platform), method: :get, class: 'btn-edit' %>
+  <%= button_to 'Delete', platform_path(@platform), method: :delete, class: 'btn-danger' %>
+  <%= button_to "Back to platforms", platforms_path, method: :get, class: 'btn' %>
 </div>

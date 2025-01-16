@@ -8,4 +8,7 @@
   <% end %>
 </ul>
 
-<%= button_to 'Create New Game', new_game_path, method: :get %>
+<div>
+  <%= button_to 'Create New Game', new_game_path, method: :get, class: 'btn-primary' %>
+  <%= button_to 'Back to Home', root_path, method: :get, class: 'btn' %>
+</div>
