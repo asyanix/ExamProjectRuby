@@ -12,3 +12,7 @@
   <%= button_to "Create New Platfotm", new_platform_path, method: :get, class: 'btn-primary' %>
   <%= button_to 'Back to Home', root_path, method: :get, class: 'btn' %>
 </div>
+
+<% flash.each do |key, message| %>
+  <div class="flash <%= key %>"><%= message %></div>
+<% end %>

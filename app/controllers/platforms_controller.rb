@@ -33,8 +33,11 @@ class PlatformsController < ApplicationController
   end
 
   def destroy
-    @platform.destroy!
-    redirect_to platforms_path, status: :see_other, notice: "Platform was successfully destroyed."
+    if @platform.destroy
+      redirect_to platforms_path, status: :see_other, notice: "Platform was successfully destroyed."
+    else
+      redirect_to platforms_path, alert: "Cannot delete platform because it has associated games."
+    end
   end
 
   private

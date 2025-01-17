@@ -35,8 +35,11 @@ class PublishersController < ApplicationController
   end
 
   def destroy
-    @publisher.destroy!
-    redirect_to publishers_path, status: :see_other, notice: "Publisher was successfully destroyed."
+    if @publisher.destroy
+      redirect_to publishers_path, status: :see_other, notice: "Publisher was successfully destroyed."
+    else
+      redirect_to publishers_path, alert: "Cannot delete publisher because it has associated games."
+    end
   end
 
   private

@@ -5,6 +5,7 @@ body {
     margin: 20px;
     padding: 0;
     line-height: 1.6;
+    font-size: larger;
 }
 
 h1 {
@@ -27,6 +28,7 @@ h2, h3 {
   text-decoration: none;
   border-radius: 4px;
   margin: 5px;
+  width: 190px;
 }
 
 .btn-primary {
@@ -38,6 +40,7 @@ h2, h3 {
   text-decoration: none;
   border-radius: 4px;
   margin: 5px;
+  width: 190px;
 }
 
 .btn-danger {
@@ -49,6 +52,7 @@ h2, h3 {
   text-decoration: none;
   border-radius: 4px;
   margin: 5px;
+  width: 190px;
 }
 .btn-edit {
   background-color: #e6f051;
@@ -59,6 +63,7 @@ h2, h3 {
   text-decoration: none;
   border-radius: 4px;
   margin: 5px;
+  width: 190px;
 }
 
 .btn:hover, .btn-primary:hover, .btn-danger:hover, .btn-edit:hover {
