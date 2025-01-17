@@ -1,6 +1,6 @@
 class Platform < ApplicationRecord
   has_many :games, dependent: :restrict_with_error
-  
+
   validates :name, :releaseDate, :manufacturer, presence: true
   validates :name, :manufacturer, length: { minimum: 3 }
   validate :release_date_is_valid
