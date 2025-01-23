@@ -1,24 +1,41 @@
-# README
+# Games App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Экзаменационный проект по дисциплине "Паттерны проектирования". Веб-приложение, реализованное на Ruby On Rails, выполняющий функции CRUD для сущностей БД по теме "Видеоигры".
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+- **Ruby version**: Specify the version of Ruby required (e.g., `3.1.2`).
+- **Rails version**: Specify the version of Rails (e.g., `7.0.4`).
+- **System dependencies**: List any dependencies, such as `Node.js`, `Yarn`, or specific database systems.
 
-* System dependencies
+## Setup Instructions
 
-* Configuration
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your_username/your_repo.git
+cd your_repo
+```
 
-* Database creation
+### 2. Install Dependencies
+```bash
+bundle install
+yarn install # If using Yarn for managing JavaScript packages
+```
 
-* Database initialization
+### 3. Database Setup
+- **Create the database:**
+```bash
+bin/rails db:create
+```
 
-* How to run the test suite
+- **Run migrations:**
+```bash
+bin/rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### 4. Start the Application
+```bash
+bin/rails server
+```
+Visit `http://localhost:3000` in your browser.
 
-* Deployment instructions
-
-* ...
