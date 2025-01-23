@@ -1,5 +1,5 @@
 class PlatformsController < ApplicationController
-  before_action :set_platform, only: %i[ show edit update destroy ]
+  before_action :set_platform, only: %i[ show edit update destroy games]
 
   def index
     @platforms = Platform.order(:name)
@@ -38,6 +38,10 @@ class PlatformsController < ApplicationController
     else
       redirect_to platforms_path, alert: "Cannot delete platform because it has associated games."
     end
+  end
+
+  def games
+    @games = @platform.games
   end
 
   private

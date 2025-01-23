@@ -1,0 +1,20 @@
+<% content_for :title, "Games for #{@publisher.name}" %>
+
+<h1>Games for <%= @publisher.name %></h1>
+
+<% if @games.any? %>
+  <ul>
+    <% @games.each do |game| %>
+      <li>
+        <%= link_to game.title, game_path(game) %> 
+        (Genre: <%= game.genre %>, Released on: <%= game.releaseDate %>)
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No games available for this platform.</p>
+<% end %>
+
+<div>
+  <%= button_to "Back to publishers", publishers_path, method: :get, class: 'btn' %>
+</div>

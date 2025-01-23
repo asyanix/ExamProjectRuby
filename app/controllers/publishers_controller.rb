@@ -1,6 +1,6 @@
 class PublishersController < ApplicationController
   # Коллбек перед выполнением методов show, edit, update, и destroy для для поиска записи Publisher
-  before_action :set_publisher, only: %i[ show edit update destroy ]
+  before_action :set_publisher, only: %i[ show edit update destroy games]
 
   def index
     @publishers = Publisher.order(:name)
@@ -42,12 +42,16 @@ class PublishersController < ApplicationController
     end
   end
 
+  def games
+    @games = @publisher.games
+  end
+
   private
     def set_publisher
       @publisher = Publisher.find(params[:id])
     end
 
     def publisher_params
-      params.require(:publisher).permit(:name, :country, :general_manager)
+      params.require(:publisher).permit(:name, :TIN, :country, :general_manager)
     end
 end
