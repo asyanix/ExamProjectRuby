@@ -5,6 +5,19 @@ class Platform < ApplicationRecord
   validates :name, :manufacturer, length: { minimum: 3 }
   validate :release_date_is_valid
 
+  def age
+    return nil unless releaseDate
+    (Date.today - releaseDate).to_i / 365
+  end
+
+  def has_games?
+    if games.exists?
+      "Yes"
+    else
+      "No"
+    end
+  end
+
   private
 
   def release_date_is_valid

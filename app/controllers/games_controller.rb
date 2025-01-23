@@ -2,7 +2,7 @@ class GamesController < ApplicationController
   before_action :set_game, only: %i[show edit update destroy]
 
   def index
-    @games = Game.all
+    @games = Game.order(:title)
   end
 
   def show

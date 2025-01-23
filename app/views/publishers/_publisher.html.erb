@@ -6,12 +6,17 @@
 
   <p>
     <strong>Country:</strong>
-    <%= publisher.country %>
+    <%= publisher.formatted_country %>
   </p>
 
   <p>
     <strong>General manager:</strong>
-    <%= publisher.general_manager %>
+    <%= publisher.formatted_general_manager %>
+  </p>
+
+  <p>
+    <strong>Has games?</strong>
+    <%= publisher.has_games? %>
   </p>
 
 </div>

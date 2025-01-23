@@ -3,7 +3,7 @@ class PublishersController < ApplicationController
   before_action :set_publisher, only: %i[ show edit update destroy ]
 
   def index
-    @publishers = Publisher.all
+    @publishers = Publisher.order(:name)
   end
 
   def show

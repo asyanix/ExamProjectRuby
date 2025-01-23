@@ -2,7 +2,7 @@ class PlatformsController < ApplicationController
   before_action :set_platform, only: %i[ show edit update destroy ]
 
   def index
-    @platforms = Platform.all
+    @platforms = Platform.order(:name)
   end
 
   def show

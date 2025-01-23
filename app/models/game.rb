@@ -6,6 +6,15 @@ class Game < ApplicationRecord
   validates :releaseDate, presence: true
   validate :release_date_is_valid
 
+  def formatted_genre
+    genre.titleize
+  end
+
+  def age
+    return nil unless releaseDate
+    (Date.today - releaseDate).to_i / 365
+  end
+
   private
 
   def release_date_is_valid
